@@ -41,7 +41,7 @@
     </div>
     <div class="form-group">
         {!! Form::label('time','时间:') !!}
-        {!! Form::text('time',null,['class'=>'form-control','placeholder'=>'2017-06-06 13:00:00']) !!}
+        {!! Form::text('time',Carbon\Carbon::now()->format('Y-m-d H:i:s'),['class'=>'form-control']) !!}
     </div>
     <div class="form-group">
         {!! Form::submit('增加',['class'=>'btn btn-success form-control']) !!}
